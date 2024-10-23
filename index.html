@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Demonstration</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <h1>Sorting Algorithms Demonstration</h1>
+    <div class="sort-section" id="heap-sort-section">
+        <h2>Heap Sort</h2>
+        <p>Heap Sort is a comparison-based sorting technique based on a Binary Heap data structure. It involves building a max heap from the input data and then repeatedly extracting the maximum element from the heap and rebuilding the heap until all elements are sorted. <br> <strong>Advantages:</strong> Works well on large database's, and uses memory efficently <br> <strong>Disadvantages:</strong> Not stable. More complex to implement compared to simpler algorithms like Bubble Sort.</p>
+        <div>
+            <label for="heap-sort-input">Enter numbers (comma-separated):</label>
+            <input type="text" id="heap-sort-input">
+        </div>
+        <button onclick="demonstrateHeapSort()">Sort</button>
+        <div>Pre-sorted: <span id="heap-sort-pre"></span></div>
+        <div id="heap-sort-diagram" class="sort-diagram"></div>
+    </div>
+    <div class="sort-section" id="radix-sort-section">
+        <h2>Radix Sort</h2>
+        <p>Radix Sort is a non-comparative sorting algorithm that sorts numbers by processing individual digits. It processes digits from the least significant to the most significant (LSD Radix Sort) or vice versa (MSD Radix Sort). <br> <strong>Advantages:</strong> It is extremley efficient for sorting large numbers of integers. <br> <strong>Disadvantages:</strong> Requires additional space for the output array. Not suitable for sorting strings or floating-point numbers without modification.</p>
+        <div>
+            <label for="radix-sort-input">Enter numbers (comma-separated):</label>
+            <input type="text" id="radix-sort-input">
+        </div>
+        <button onclick="demonstrateRadixSort()">Sort</button>
+        <div>Pre-sorted: <span id="radix-sort-pre"></span></div>
+        <div>Sorted: <span id="radix-sort-output"></span></div>
+        <div id="radix-sort-diagram" class="sort-diagram"></div>
+    </div>
+    <div class="sort-section" id="counting-sort-section">
+        <h2>Counting Sort</h2>
+        <p>Counting Sort is a non-comparative sorting algorithm that works by counting the number of occurrences of each unique element in the input array. The counts are then used to place the elements in the correct position in the output array. <br> <strong>Advantages:</strong> It is very stable and requires little modification to run consistently. Efficient for sorting integers with a limited range. <br> <strong>Disadvantages:</strong> Requires additional space for the count and output arrays. Not suitable for sorting data with a large range of values or non-integer data.</p>
+        <div>
+            <label for="counting-sort-input">Enter numbers (comma-separated):</label>
+            <input type="text" id="counting-sort-input">
+        </div>
+        <button onclick="demonstrateCountingSort()">Sort</button>
+        <div>Pre-sorted: <span id="counting-sort-pre"></span></div>
+        <div>Sorted: <span id="counting-sort-output"></span></div>
+        <div id="counting-sort-diagram" class="sort-diagram"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sort-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sort-section h2 {
+    margin-top: 0;
+}
+
+.sort-section p {
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+#heap-sort-output, #radix-sort-output, #counting-sort-output,
+#heap-sort-pre, #radix-sort-pre, #counting-sort-pre {
+    display: block;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sort-diagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sort-diagram div {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.sort-diagram .highlight {
+    background-color: #FF5733; 
+}
+
+
